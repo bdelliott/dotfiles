@@ -1,0 +1,22 @@
+#!/bin/bash
+
+SCRIPT_DIR=`dirname $0`
+
+
+function link_file {
+    local file=$1
+    local name=`basename $file| sed s/.symlink//`
+
+    ln -svf $file $HOME/.$name
+}
+
+
+function link_all {
+    for file in `find $SCRIPT_DIR -name "*.symlink"`
+    do
+        link_file $file
+    done
+}
+
+
+link_all

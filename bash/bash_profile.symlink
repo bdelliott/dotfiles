@@ -1,0 +1,7 @@
+# ~/.bash_profile is used if the bash shell session is interactive
+
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
+
+

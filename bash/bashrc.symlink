@@ -33,7 +33,16 @@ source ~/.git-completion.bash
 # https://github.com/defunkt/gist
 export GITHUB_URL="https://github.rackspace.com/"
 
-# source in additional customizations that are not version controlled
+# os-specific customtization:
+if [ `uname -s`=="Darwin" ]
+then
+    if [ -f ~/.osxrc ]
+    then
+        . ~/.osxrc
+    fi
+fi
+
+# additional customizations that are not version controlled:
 if [ -f ~/.localrc ]
 then
     . ~/.localrc

@@ -1,0 +1,9 @@
+# Homebrew ruby bin
+PATH=$PATH:/usr/local/Cellar/ruby/2.1.0/bin
+
+# VMWare Fusion in, if installed
+FUSION_DIR="/Applications/VMware\ Fusion.app/Contents/Library"
+if [ -d "$FUSION_DIR" ]
+then
+    PATH=$PATH:$FUSION_DIR
+fi

@@ -33,13 +33,19 @@ source ~/.git-completion.bash
 # https://github.com/defunkt/gist
 export GITHUB_URL="https://github.rackspace.com/"
 
-# os-specific customtization:
+# os-specific customization:
 if [ `uname -s`=="Darwin" ]
 then
     if [ -f ~/.osxrc ]
     then
         . ~/.osxrc
     fi
+fi
+
+# python-specific customization:
+if [ -f ~/.pythonrc ]
+then
+    . ~/.pythonrc
 fi
 
 # additional customizations that are not version controlled:

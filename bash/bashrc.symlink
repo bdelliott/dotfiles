@@ -34,7 +34,7 @@ source ~/.git-completion.bash
 export GITHUB_URL="https://github.rackspace.com/"
 
 # os-specific customization:
-if [ `uname -s`=="Darwin" ]
+if [ `uname -s` == "Darwin" ]
 then
     if [ -f ~/.osxrc ]
     then

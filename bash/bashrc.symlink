@@ -34,11 +34,18 @@ source ~/.git-completion.bash
 export GITHUB_URL="https://github.rackspace.com/"
 
 # os-specific customization:
-if [ `uname -s` == "Darwin" ]
+UNAME=`uname -s`
+if [ "$UNAME" == "Darwin" ]
 then
     if [ -f ~/.osxrc ]
     then
         . ~/.osxrc
+    fi
+elif [ "$UNAME" == "Linux" ]
+then
+    if [ -f ~/.linuxrc ]
+    then
+        . ~/.linuxrc
     fi
 fi
 

@@ -1,0 +1,2 @@
+# 'ack' search program gets installed as ack-grep
+alias ack='ack-grep'

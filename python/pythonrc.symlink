@@ -2,4 +2,7 @@
 export WORKON_HOME="$HOME/venv"
 
 # setup shell stuffs for virtualenvwrapper
-. `which virtualenvwrapper.sh`
+wrapper=`which virtualenvwrapper.sh`
+if [ $? -eq 0 ]; then
+    . $wrapper
+fi

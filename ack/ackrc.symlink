@@ -1,0 +1,5 @@
+# ignore .venv dir
+--ignore-dir=.venv
+
+# ignore .tox dir
+--ignore-dir=.tox

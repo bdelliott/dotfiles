@@ -11,3 +11,5 @@ filetype plugin indent on
 
 :syntax enable
 
+au BufNewFile,BufRead Jenkinsfile setf groovy
+

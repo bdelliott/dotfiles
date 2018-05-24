@@ -33,6 +33,9 @@ source ~/.git-completion.bash
 # https://github.com/defunkt/gist
 export GITHUB_URL="https://github.rackspace.com/"
 
+# colon-separated list of ansible inventory source files:
+export ANSIBLE_INVENTORY="${HOME}/.config/ansible/hosts"
+
 # os-specific customization:
 UNAME=`uname -s`
 if [ "$UNAME" == "Darwin" ]

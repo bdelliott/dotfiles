@@ -3,6 +3,7 @@ PATH=${PATH}:/bin:/sbin:/usr/bin:/usr/sbin:/sbin
 PATH=${PATH}:/bin
 PATH=${PATH}:/usr/local/sbin
 PATH=${HOME}/bin:${PATH}
+PATH=${HOME}/go/bin:${PATH}
 
 #export PATH
 

@@ -63,6 +63,13 @@ then
     . ~/.openstackrc
 fi
 
+# docker configuration:
+if [ -f ~/.dockerrc ]
+then
+    . ~/.dockerrc
+fi
+
+
 # additional customizations that are not version controlled:
 if [ -f ~/.localrc ]
 then

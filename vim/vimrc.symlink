@@ -10,4 +10,4 @@ set tabstop=4
 filetype plugin indent on
 
 :syntax enable
-
+:colorscheme elflord

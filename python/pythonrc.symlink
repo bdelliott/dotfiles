@@ -1,3 +1,5 @@
+export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
+
 # home for virtualenvs, used by virtualenvwrapper
 export WORKON_HOME="$HOME/venv"
 

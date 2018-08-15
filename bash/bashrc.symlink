@@ -55,6 +55,12 @@ then
     . ~/.pythonrc
 fi
 
+# openstack cloud client configuration:
+if [ -f ~/.openstackrc ]
+then
+    . ~/.openstackrc
+fi
+
 # additional customizations that are not version controlled:
 if [ -f ~/.localrc ]
 then

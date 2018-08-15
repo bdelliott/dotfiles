@@ -1,0 +1,24 @@
+# requires existence of `oscli` virtualenv and the openstack cli
+OSCLI="${HOME}/venv/oscli/bin/openstack"
+
+alias openstack="${OPENSTACK}"
+
+oscli() {
+    local cloud="$1"
+    local region="$2"
+    shift 2
+
+    ${OSCLI} --os-cloud ${cloud} --os-region ${region} $@
+}
+
+dfw() {
+    oscli rackspace DFW "$@"
+}
+
+iad() {
+    oscli rackspace IAD "$@"
+}
+
+ord() {
+    oscli rackspace ORD "$@"
+}

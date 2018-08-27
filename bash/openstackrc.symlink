@@ -11,6 +11,7 @@ oscli() {
     ${OSCLI} --os-cloud ${cloud} --os-region ${region} $@
 }
 
+# rackspace internal account shortcuts:
 dfw() {
     oscli rackspace DFW "$@"
 }
@@ -22,3 +23,18 @@ iad() {
 ord() {
     oscli rackspace ORD "$@"
 }
+
+# rackspace personal account shortcuts:
+dfwp() {
+    oscli rackspacep DFW "$@"
+}
+
+iadp() {
+    oscli rackspacep IAD "$@"
+}
+
+ordp() {
+    oscli rackspacep ORD "$@"
+}
+
+

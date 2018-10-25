@@ -4,3 +4,12 @@ if [ -d "$FUSION_DIR" ]
 then
     PATH=$PATH:$FUSION_DIR
 fi
+
+# Visual Studio code, if installed:
+VSCODE_DIR="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+if [ -d "$VSCODE_DIR" ]
+then
+    PATH=$PATH:$VSCODE_DIR
+fi
+
+

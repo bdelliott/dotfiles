@@ -1,4 +1,5 @@
 PATH=/usr/local/bin
+PATH=${PATH}:/usr/bin
 PATH=${PATH}:/bin:/sbin:/usr/bin:/usr/sbin:/sbin
 PATH=${PATH}:/bin
 PATH=${PATH}:/usr/local/sbin

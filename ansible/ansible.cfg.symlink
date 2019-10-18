@@ -1,3 +1,9 @@
 [defaults]
 host_key_checking = False
 log_path=~/.ansible/ansible.log
+
+[inventory]
+enable_plugins = host_list, script, auto, yaml, ini, toml, gcp_compute
+
+[ssh_connection]
+ssh_args = -o ForwardAgent=yes -o ControlMaster=auto -o ControlPersist=60s

@@ -31,10 +31,10 @@ export LANG=en_US.UTF-8
 source ~/.git-completion.bash
 
 # https://github.com/defunkt/gist
-export GITHUB_URL="https://github.rackspace.com/"
+#export GITHUB_URL="https://github.rackspace.com/"
 
 # colon-separated list of ansible inventory source files:
-export ANSIBLE_INVENTORY="${HOME}/.config/ansible/hosts"
+#export ANSIBLE_INVENTORY="${HOME}/.config/ansible/hosts"
 
 # os-specific customization:
 UNAME=`uname -s`

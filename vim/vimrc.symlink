@@ -7,6 +7,8 @@ set softtabstop=4
 set shiftwidth=4
 set tabstop=4
 
+set maxmempattern=2000000
+
 filetype plugin indent on
 
 :syntax enable

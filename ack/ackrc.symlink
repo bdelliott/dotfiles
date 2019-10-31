@@ -3,3 +3,18 @@
 
 # ignore .tox dir
 --ignore-dir=.tox
+
+# ignore idea/pycharm/etc
+--ignore-dir=.idea
+
+# ignore swagger dir in itemstore
+--ignore-dir=swagger
+
+# ignore html coverage reports
+--ignore-dir=htmlcov
+
+# coverage data file
+--ignore-file=is:.coverage
+
+# ignore pytest crap
+--ignore-dir=.pytest_cache

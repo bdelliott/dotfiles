@@ -15,14 +15,6 @@ alias ruby='ruby -w'
 alias srcb='source ~/.bashrc'
 alias srcba='source bin/activate'
 
-## prompt
-GREEN="\[\e[01;32m\]"
-BLUE="\[\e[01;34m\]"
-export PS1="${GREEN}\u${BLUE}@${GREEN}`hostname -s` ${BLUE}\w $ \[\e[00m\]"
-
-export EDITOR=/usr/bin/vim
-export SVN_EDITOR=vim
-
 # set locale to utf8
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -35,6 +27,9 @@ source ~/.git-completion.bash
 
 # colon-separated list of ansible inventory source files:
 #export ANSIBLE_INVENTORY="${HOME}/.config/ansible/hosts"
+
+export EDITOR=/usr/bin/vim
+export SVN_EDITOR=vim
 
 # os-specific customization:
 UNAME=`uname -s`

@@ -117,7 +117,10 @@ if ! shopt -oq posix; then
 fi
 
 # 'ack' search program gets installed as ack-grep
-alias ack='ack-grep'
+#alias ack='ack-grep'
 
+# emulate mac copy/paste
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 
 

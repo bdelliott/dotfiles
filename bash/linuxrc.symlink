@@ -123,4 +123,8 @@ fi
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
-
+# On Ubuntu, some stuff like the python3.7 package and associated pip
+# is found in ~/.local/bin
+if [ -d "${HOME}/.local/bin" ]; then
+    export PATH="${HOME}/.local/bin:${PATH}"
+fi

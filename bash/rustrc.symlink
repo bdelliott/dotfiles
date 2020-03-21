@@ -1,0 +1,2 @@
+# source cargo bin dir
+. ${HOME}/.cargo/env

@@ -66,6 +66,12 @@ then
 fi
 
 
+# rust configuration:
+if [ -f ~/.rustrc ]
+then
+    . ~/.rustrc
+fi
+
 # additional customizations that are not version controlled:
 if [ -f ~/.localrc ]
 then

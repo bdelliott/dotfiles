@@ -1,0 +1,6 @@
+if [ -f  /usr/local/bin/virtualenvwrapper.sh ]
+then
+    export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+    export WORKON_HOME="${HOME}/venv"
+    . /usr/local/bin/virtualenvwrapper.sh
+fi

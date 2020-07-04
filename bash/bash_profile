@@ -1,6 +1,6 @@
 # ~/.bash_profile is used if the bash shell session is an
 # interactive login shell
 
-if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
-fi
+export DOTFILES="${HOME}/dotfiles"
+
+. "${DOTFILES}/bash/bashrc"

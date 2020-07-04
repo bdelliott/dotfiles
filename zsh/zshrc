@@ -1,0 +1,9 @@
+# ~/.zshrc used regardless of whether this is a login session or not
+
+export DOTFILES="${HOME}/dotfiles"
+
+## generic shell customizations:
+. ${DOTFILES}/sh/rc
+
+## prompt
+export PS1="%F{green}${USER}%F{cyan}@%F{green}%m %F{cyan}%2~ $%F{white} "

@@ -1,23 +1,20 @@
 #!/bin/bash
 
 # get absolute path of the dotfiles repo
-SCRIPT_DIR=$(echo $(cd $(dirname $0); pwd))
+DOTFILES=$(echo $(cd $(dirname $0); pwd))
 
+# setup bash:
+rm -f ${HOME}/.bash_profile
+rm -f ${HOME}/.bashrc
+rm -f ${HOME}/.profile
 
-function link_file {
-    local file=$1
-    local name=`basename $file| sed s/.symlink//`
+ln -s ${DOTFILES}/bash/bash_profile ${HOME}/.bash_profile
 
-    ln -svf $file $HOME/.$name
-}
+# setup zsh:
+rm -f ${HOME}/.zshenv
+rm -f ${HOME}/.zprofile
+rm -f ${HOME}/.zshrc
+rm -f ${HOME}/.zlogin
+rm -f ${HOME}/.zlogout
 
-
-function link_all {
-    for file in `find $SCRIPT_DIR -name "*.symlink"`
-    do
-        link_file $file
-    done
-}
-
-
-link_all
+ln -s ${DOTFILES}/zsh/zshrc ${HOME}/.zshrc

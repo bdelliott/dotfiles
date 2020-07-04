@@ -1,0 +1,6 @@
+# colon-separated list of ansible inventory source files:
+export ANSIBLE_INVENTORY="${HOME}/.config/ansible/hosts"
+
+# set path to config file:
+export ANSIBLE_CONFIG="${DOTFILEs}/ansible/ansible.cfg"
+

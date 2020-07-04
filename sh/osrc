@@ -1,0 +1,10 @@
+# os-specific customization:
+
+UNAME=$(uname -s)
+if [ "$UNAME" = "Darwin" ]
+then
+    source ${DOTFILES}/sh/osxrc 
+elif [ "$UNAME" = "Linux" ]
+then
+    source ${DOTFILES}/sh/linuxrc
+fi

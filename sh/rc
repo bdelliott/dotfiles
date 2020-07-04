@@ -1,0 +1,28 @@
+# customizations compatible with different shells (bash, zsh)
+
+shdir="${DOTFILES}/sh"
+. ${shdir}/funcs
+
+# set locale to utf8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+export EDITOR=/usr/bin/vim
+
+# path manipulation:
+source_if_exists "${shdir}/paths"
+
+# os-specific:
+source_if_exists "${shdir}/osrc"
+
+# ansible:
+source_if_exists "${DOTFILES}/ansible/rc"
+
+# python:
+source_if_exists "${DOTFILES}/python/rc"
+
+# rust:
+source_if_exists "${DOTFILES}/rust/rc"
+
+# additional customizations that are not version controlled:
+source_if_exists "${HOME}/.localrc"

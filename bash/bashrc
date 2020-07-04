@@ -1,0 +1,21 @@
+## generic shell customizations:
+. ${DOTFILES}/sh/rc
+
+## bash-specific customizations:
+UNAME=$(uname -s)
+if [ "$UNAME" == "Darwin" ]
+then
+    . ${DOTFILES}/bash/osxrc
+fi
+
+# add git command completion
+gcb="${dotfiles}/git/git-completion.bash"
+if [ -x "${gcb}" ]
+then
+    . ${gcb}
+fi
+
+## prompt
+GREEN="\[\e[01;32m\]"
+BLUE="\[\e[01;34m\]"
+export PS1="${GREEN}\u${BLUE}@${GREEN}$(hostname -s) ${BLUE}\w $ \[\e[00m\]"

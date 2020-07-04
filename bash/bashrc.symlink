@@ -53,12 +53,6 @@ then
     . ~/.pythonrc
 fi
 
-# openstack cloud client configuration:
-if [ -f ~/.openstackrc ]
-then
-    . ~/.openstackrc
-fi
-
 # docker configuration:
 if [ -f ~/.dockerrc ]
 then

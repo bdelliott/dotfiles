@@ -1,0 +1,8 @@
+GOENV_ROOT="${HOME}/.goenv"
+
+if [ -x "${GOENV_ROOT}" ]
+then
+    export GOENV_ROOT
+    export PATH="${GOENV_ROOT}/bin:$PATH"
+    eval "$(goenv init -)"
+fi

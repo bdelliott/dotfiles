@@ -5,5 +5,8 @@ export DOTFILES="${HOME}/dotfiles"
 ## generic shell customizations:
 . ${DOTFILES}/sh/rc
 
+## enable new style completion
+autoload -Uz compinit && compinit
+
 ## prompt
 export PS1="%F{green}${USER}%F{cyan}@%F{green}%m %F{cyan}%2~ $%F{white} "

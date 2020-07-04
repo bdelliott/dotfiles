@@ -9,7 +9,7 @@ then
 fi
 
 # add git command completion
-gcb="${dotfiles}/git/git-completion.bash"
+gcb="${DOTFILES}/bash/git-completion.bash"
 if [ -x "${gcb}" ]
 then
     . ${gcb}

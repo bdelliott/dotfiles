@@ -18,3 +18,9 @@ rm -f ${HOME}/.zlogin
 rm -f ${HOME}/.zlogout
 
 ln -s ${DOTFILES}/zsh/zshrc ${HOME}/.zshrc
+
+# tmux:
+ln -s ${DOTFILES}/tmux/tmux.conf ${HOME}/.tmux.conf
+
+# vim:
+ln -s ${DOTFILES}/vim/vimrc ${HOME}/.vimrc

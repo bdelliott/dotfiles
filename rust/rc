@@ -1,2 +1,2 @@
 # source cargo bin dir
-. ${HOME}/.cargo/env
+source_if_exists ${HOME}/.cargo/env

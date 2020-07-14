@@ -9,4 +9,4 @@ export DOTFILES="${HOME}/dotfiles"
 autoload -Uz compinit && compinit
 
 ## prompt
-export PS1="%F{green}${USER}%F{cyan}@%F{green}%m %F{cyan}%2~ $%F{white} "
+export PS1="%F{green}${USER}%F{cyan}@%F{green}%m %F{cyan}%4~ $%F{white} "

@@ -24,3 +24,6 @@ ln -s ${DOTFILES}/tmux/tmux.conf ${HOME}/.tmux.conf
 
 # vim:
 ln -s ${DOTFILES}/vim/vimrc ${HOME}/.vimrc
+
+# ack:
+ln -s ${DOTFILES}/ack/ackrc ${HOME}/.ackrc

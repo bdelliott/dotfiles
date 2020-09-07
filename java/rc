@@ -1,0 +1,6 @@
+JAVA_HOME="/usr/local/Cellar/openjdk/14.0.1"
+if [ -d $JAVA_HOME ]
+then
+    export JAVA_HOME
+    export PATH="${JAVA_HOME}/bin:${PATH}"
+fi

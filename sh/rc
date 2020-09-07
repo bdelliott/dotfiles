@@ -27,5 +27,8 @@ source_if_exists "${DOTFILES}/go/rc"
 # rust:
 source_if_exists "${DOTFILES}/rust/rc"
 
+# java:
+source_if_exists "${DOTFILES}/java/rc"
+
 # additional customizations that are not version controlled:
 source_if_exists "${HOME}/.localrc"

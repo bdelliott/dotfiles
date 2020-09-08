@@ -1,4 +1,5 @@
-JAVA_HOME="/usr/local/Cellar/openjdk/14.0.1"
+# default to jdk 14
+JAVA_HOME="${HOME}/dev/java/jdk-14.0.2.jdk/Contents/Home"
 if [ -d $JAVA_HOME ]
 then
     export JAVA_HOME

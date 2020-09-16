@@ -2,5 +2,5 @@
 export ANSIBLE_INVENTORY="${HOME}/.config/ansible/hosts"
 
 # set path to config file:
-export ANSIBLE_CONFIG="${DOTFILEs}/ansible/ansible.cfg"
+export ANSIBLE_CONFIG="${DOTFILES}/ansible/ansible.cfg"
 

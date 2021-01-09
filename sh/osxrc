@@ -18,5 +18,5 @@ fi
 
 # Homebrew doesn't symlink the `openssl` lib and includes because OSX provides its own.
 # pyscopg2 will not pip install without these:
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
+#export LDFLAGS="-L/usr/local/opt/openssl/lib"
+#export CPPFLAGS="-I/usr/local/opt/openssl/include"

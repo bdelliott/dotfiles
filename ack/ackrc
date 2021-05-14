@@ -18,3 +18,6 @@
 
 # ignore pytest crap
 --ignore-dir=.pytest_cache
+
+# ignore go vendor dir
+--ignore-dir=vendor

@@ -1,9 +1,9 @@
 function source_if_exists() {
     # optionally source file, only if it's present
     spath="${1}"
-    if [ -x "${spath}" ]
+    if [ -f "${spath}" ]
     then
-	source "${spath}"
+	    source "${spath}"
     elif [ -n "${DEBUG}" ]
     then
         echo "Not sourcing ${spath} - it does not exist."

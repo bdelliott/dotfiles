@@ -22,3 +22,9 @@ then
     # alias brew to avoid `brew doctor` issues about linking against a pyenv-provided python
     alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 fi
+
+POETRY_HOME="${HOME}/.poetry"
+if [ -d $POETRY_HOME ]
+then
+    export PATH="$HOME/.poetry/bin:$PATH"
+fi

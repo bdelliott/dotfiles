@@ -21,3 +21,6 @@
 
 # ignore go vendor dir
 --ignore-dir=vendor
+
+# ignore tests dir
+--ignore-dir=tests

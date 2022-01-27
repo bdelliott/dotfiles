@@ -8,6 +8,7 @@ fi
 if command -v pyenv 1>/dev/null 2>&1
 then
     eval "$(pyenv init -)"
+    export PATH="${PYENV_ROOT}/shims:${PATH}"
 
     # also try to setup doug hellman's virtualenv wrapper
     venv_wrapper=$(pyenv prefix)/bin/virtualenvwrapper.sh
@@ -18,6 +19,6 @@ then
         . ${venv_wrapper}
     fi
 
+    # alias brew to avoid `brew doctor` issues about linking against a pyenv-provided python
+    alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 fi
-
-

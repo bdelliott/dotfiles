@@ -24,3 +24,6 @@
 
 # ignore tests dir
 --ignore-dir=tests
+
+# ignore htmlcov
+--ignore-dir=htmlcov

@@ -9,6 +9,11 @@ export LANG=en_US.UTF-8
 
 export EDITOR=/usr/bin/vim
 
+# time-helper:
+function checktimes() {
+    for TZ in America/Vancouver US/{Pacific,Mountain,Central,Eastern} Europe/Berlin UTC;do echo "${TZ},$(TZ=${TZ} date)";done | column -s ',' -t
+}
+
 # path manipulation:
 source_if_exists "${shdir}/paths"
 

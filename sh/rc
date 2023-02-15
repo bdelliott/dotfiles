@@ -21,7 +21,7 @@ source_if_exists "${shdir}/paths"
 source_if_exists "${shdir}/osrc"
 
 # ansible:
-source_if_exists "${DOTFILES}/ansible/rc"
+#source_if_exists "${DOTFILES}/ansible/rc"
 
 # python:
 source_if_exists "${DOTFILES}/python/rc"

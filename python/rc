@@ -23,7 +23,7 @@ then
     alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 fi
 
-POETRY_HOME="${HOME}/.poetry"
+POETRY_HOME="${HOME}/.local"
 if [ -d $POETRY_HOME ]
 then
     export PATH="${POETRY_HOME}/bin:$PATH"

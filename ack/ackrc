@@ -25,3 +25,9 @@
 
 # ignore tests dir
 --ignore-dir=tests
+
+# ignore htmlcov
+--ignore-dir=htmlcov
+
+# ignore mypy caches
+--ignore-dir=.mypy_cache

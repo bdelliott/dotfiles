@@ -3,6 +3,12 @@ GOENV_ROOT="${HOME}/.goenv"
 if [ -x "${GOENV_ROOT}" ]
 then
     export GOENV_ROOT
-    export PATH="${GOENV_ROOT}/bin:$PATH"
+
+    # add `goenvz itself to path:
+    export PATH="${GOENV_ROOT}/bin:${PATH}"
+
+    # add `go` shim to front of the path to take priority over homebrew `go`
+    export PATH="${GOENV_ROOT}/shims:${PATH}"
+
     eval "$(goenv init -)"
 fi

@@ -1,5 +1,5 @@
 # homebrew m1 arm mac alternate path:
-PATH=/opt/homebrew/bin
+PATH=/opt/homebrew/bin:/opt/homebrew/sbin
 # homebrew recommended intel path:
 PATH=${PATH}:/usr/local/bin:/usr/bin:/bin
 PATH=${PATH}:/usr/local/sbin:/usr/sbin/:/sbin

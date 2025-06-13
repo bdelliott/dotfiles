@@ -4,3 +4,4 @@
 export DOTFILES="${HOME}/dotfiles"
 
 . "${DOTFILES}/bash/bashrc"
+. "$HOME/.cargo/env"

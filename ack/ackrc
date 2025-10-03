@@ -31,3 +31,6 @@
 
 # ignore mypy caches
 --ignore-dir=.mypy_cache
+
+# ignore terraform init directory
+--ignore-dir=.terraform

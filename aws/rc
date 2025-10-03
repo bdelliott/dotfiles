@@ -1,0 +1,26 @@
+# Assumption: correct AWS profile context already loaded
+
+aws-list-instances() {
+    aws ec2 describe-instances \
+      --query "Reservations[].Instances[].{ \
+        Name: Tags[?Key=='Name']|[0].Value, \
+        ID: InstanceId, \
+        State: State.Name, \
+        Type: InstanceType, \
+        PrivateIP: PrivateIpAddress, \
+        PublicIP: PublicIpAddress}" \
+      --output table
+}
+
+# Given a instance tag name, ssh into its public IP
+aws-ssh() {
+    local name="$1"
+    echo "SSH into ${name}"
+
+    ip=$(aws ec2 describe-instances \
+      --filters "Name=tag:Name,Values=$name" "Name=instance-state-name,Values=running" \
+      --query "Reservations[].Instances[].PublicIpAddress" \
+      --output text)
+
+    ssh -A ubuntu@${ip}
+}

@@ -38,6 +38,9 @@ source_if_exists "${DOTFILES}/java/rc"
 # aws:
 source_if_exists "${DOTFILES}/aws/rc"
 
+# node:
+source_if_exists "${DOTFILES}/node/rc"
+
 # additional customizations that are not version controlled:
 source_if_exists "${HOME}/.localrc"
 

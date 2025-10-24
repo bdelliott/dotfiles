@@ -37,3 +37,4 @@ if command -v kubectl &> /dev/null; then
     compdef __start_kubectl k
 fi
 
+. "$HOME/.local/bin/env"

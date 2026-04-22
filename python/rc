@@ -1,1 +1,1 @@
-export UV_PYTHON=/opt/homebrew/bin/python3.13
+export UV_PYTHON=/opt/homebrew/bin/python3.14
